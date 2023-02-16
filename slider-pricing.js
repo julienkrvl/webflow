@@ -1,6 +1,5 @@
-<!-- RANGESLIDER SCRIPT-->
+/* RANGESLIDER SCRIPT */
 
-<script>
 /*! rangeslider.js - v0.3.7 | (c) 2014 @andreruffert | MIT license | https://github.com/andreruffert/rangeslider.js */ ! function(a) {
     "use strict";
     "function" == typeof define && define.amd ? define(["jquery"], a) : a("object" == typeof exports ? require("jquery") : jQuery)
@@ -139,11 +138,9 @@
         })
     }
 });
-</script>
 
-<!-- EDIT SLIDER PARAMETERS-->
+/* EDIT SLIDER PARAMETERS */
 
-<script>
     $('#ranger').change(function(){
       console.log($('#ranger').val())
       if($('#ranger').val() < 2){
@@ -189,5 +186,3 @@
         $('.slide').removeClass('active');
       }
   });
-  
-  </script>
