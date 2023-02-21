@@ -141,11 +141,11 @@
 
 /* EDIT SLIDER PARAMETERS */
 
-    $('#ranger').input(function(){
+    $('#ranger').change(function(){
       //console.log($('#ranger').val())
       if($('#ranger').val() < 6){
           
-        $('#ranger').prop('step', 1);
+        // $('#ranger').prop('step', 1);
         
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6 display-hidden');
         
@@ -154,35 +154,35 @@
         
       } else if($('#ranger').val() > 7 && $('#ranger').val() < 500){
           
-        $('#ranger').prop('step', 10);
+        // $('#ranger').prop('step', 10);
         
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6');
         $('.pricing-card').addClass('active-2 display-hidden');
         
       } else if($('#ranger').val() > 501 && $('#ranger').val() < 1500){
           
-        $('#ranger').prop('step', 100);
+        // $('#ranger').prop('step', 100);
         
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6');
         $('.pricing-card').addClass('active-3 display-hidden');
         
      } else if($('#ranger').val() > 1501 && $('#ranger').val() < 5000){
         
-        $('#ranger').prop('step', 100);
+        // $('#ranger').prop('step', 100);
 
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6');
         $('.pricing-card').addClass('active-4 display-hidden');
          
      } else if($('#ranger').val() > 5001 && $('#ranger').val() < 15000){
         
-        $('#ranger').prop('step', 500);
+        // $('#ranger').prop('step', 500);
         
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6');
         $('.pricing-card').addClass('active-5 display-hidden');
 
       } else if($('#ranger').val() > 15001 && $('#ranger').val() <= 40000){
           
-        $('#ranger').prop('step', 1000);
+        // $('#ranger').prop('step', 1000);
         
         $('.pricing-card').removeClass('active-1 active-2 active-3 active-4 active-5 active-6');
         $('.pricing-card').addClass('active-6 display-hidden');
