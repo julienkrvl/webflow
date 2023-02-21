@@ -141,8 +141,8 @@
 
 /* EDIT SLIDER PARAMETERS */
 
-    $('#ranger').change(function(){
-      console.log($('#ranger').val())
+    $('#ranger').input(function(){
+      //console.log($('#ranger').val())
       if($('#ranger').val() < 6){
           
         $('#ranger').prop('step', 1);
